@@ -1,8 +1,15 @@
-.nav-link {
-    color: gold !important;
+body {
+    background-color: antiquewhite;
+}
+header{
+    padding: 0 !important;
+}
+.bg-bluee{
+    background-color: hsl(200 50% 80%);
+    padding: 0 !important;
 }
 .nav2 {
-    color: white !important;
+    color: black !important;
 }
 .row>*{
     margin-top: 10px;
