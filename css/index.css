@@ -1,17 +1,87 @@
 body {
     background-color: antiquewhite;
+    margin:0px;
 }
-header{
+.somos{
+    margin:3px;
+}
+.banner{
+    font-size: 8vmin;
+    font-weight:400;
+    margin: 0px ;
+    font-family: 'Franklin Gothic Medium';
+    color: hsl(200 50% 80%);
+    -webkit-text-stroke: 2px black ;
+    border: none;
+}
+.IC{
+    height: 50px;
+    width: 50px;
+}
+
+.headder {
+    align-items: center;
+}
+.bann-position{
+    text-align: center;
+}
+.T{
+    color: #ffC107 ;
+    
+    -webkit-text-stroke: 2px black;
+}
+.solicitud{
+    border: 2px solid black;
+}
+.H{
+    color: aliceblue;
+}
+header {
     padding: 0 !important;
 }
-.bg-bluee{
+
+.bg-bluee {
     background-color: hsl(200 50% 80%);
-    padding: 0 !important;
 }
+
 .nav2 {
     color: black !important;
 }
-.row>*{
+
+.row>* {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.container, #ver-mas    {
+    
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1400px){
+    #tarjetas{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media(max-width:600px) {
+    #tarjetas{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    body{
+        block-size: 550px;
+    }
+}
+
+.big-acordion{
+    padding: 20px;
+}
+.dropdown{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+
 }
