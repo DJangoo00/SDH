@@ -1,693 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HogarTech</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/index.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" defer
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    <body>
-        <div class="container-fluid bg-blue ">
-            <header>
-                <div id="banner" class="bg-bluee border bann-position ">
-                    <h1 class="banner"><span class="H">Hogar</span><span
-                            class="T">Tech</span></h1>
-                    <h3>Tu hogar en buenas manos</h3>
+</head>
+
+<body>
+    <header id="header" class="m-0 d-grid ">
+        <div id="header_1" class="m-0"><img class="logo" src="img/logo.png" />
+        </div>
+        <div id="nav_bar" class="gap-1 d-grid m-0">
+            <div id="header_element" class=" bg-danger text-center d-grid">Inicio</div>
+            <div id="header_element" class=" bg-danger text-center d-grid">Servicios</div>
+            <div id="header_element" class=" bg-danger text-center d-grid">Conocenos</div>
+            <div id="header_element" class=" bg-danger text-center d-grid">Opiniones</div>
+        </div>
+    </header>
+    
+    <div class="linea"></div>
+    
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#section1" class="nav-link">
+                        <img src="images/CA/trucos-de-carpinteria-1024x576.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#section2" class="nav-link">
+                        <img src="images/FO/fontaneria.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#section3" class="nav-link" onclick="">
+                        <img src="images/EL/electrico.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#section4" class="nav-link" onclick="">
+                        <img src="images/AC/acabados.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="container">
+        <!-- informacion sacada de https://www.carpinteriafm.com/servicios/ -->
+        <div id="section1" class="container-fluid text-dark bg-secondary text-dark" style="padding:100px 20px;">
+            <h2 class="display-4 p-2">Carpinteria</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-one-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Armarios y vestidores
+                        </button>
+                    </h2>
+                    <div id="sect-one-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Los <b>armarios a medida </b>hacen que podamos aprovechar el espacio disponible de la
+                                habitación y optimizar su uso, haciendo un <b>mueble a medida</b> único.
+                            </p>
+                            <p>
+                                Gracias a nuestra larga experiencia y conocedores de las novedades del sector asesoramos
+                                a nuestros clientes sobre cuál es el mejor diseño y distribución de los <b>armarios a
+                                    medida en Colombia</b>, así como la mejor opción en cuanto a materiales (melaminas,
+                                dm hidrófugos, maderas estratificadas, herrajes…) que se adapten a sus necesidades y
+                                preferencias.
+                            </p>
+                            <p>
+                                Existen diferentes tipos de armarios, armarios hechos a medida, los armarios empotrados
+                                los cuales ocupan poco espacio en la vivienda y si dispone de espacio podemos diseñar,
+                                fabricar e instalar <b>vestidores</b> para que pueda ordenar su ropa y sus zapatos con
+                                accesorios tipo cajones, bandejas extraíbles, pantaloneros, corbateros, colgadores, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-one-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Cocinas
+                        </button>
+                    </h2>
+                    <div id="sect-one-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>La cocina es uno de los lugares de la casa donde pasamos más tiempo. Por este motivo, es
+                                importante que los <b>muebles de cocina</b> se adapten a nuestros gustos y necesidades,
+                                recalcando el valor de la ubicación, la funcionalidad y la comodidad.</p>
+                            <p>El diseño y el estilo de una cocina son muy variados desde cocinas rústicas, cocinas
+                                modernas, cocinas con isla, cocinas empotradas…, entre otros.</p>
+                            <p>Existe en el mercado un amplio abanico de materiales para la fabricación de cocinas como
+                                pueden ser maderas macizas y sus derivados como laminados, contrachapados, aglomerados,
+                                entre otros, que aportan un acabado particular.</p>
+                            <p>Con una <b>cocina a medida</b> <b>en Colombia</b> conseguimos exclusividad, y nos
+                                aseguramos de la optimización del espacio, encontrando la mejor opción que se adapte a
+                                lo que queremos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-one-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Revestimientos
+                        </button>
+                    </h2>
+                    <div id="sect-one-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>La madera ofrece la posibilidad de crear formas únicas que dan un toque más acogedor y
+                                cálido.</p>
+                            <p>Conocemos las posibilidades de la madera, sus tratamientos y las técnicas que se pueden
+                                usar para ofrecer una solución de <b>revestimiento de madera en Colombia</b> que
+                                proporcione un aislamiento térmico y acústico, elegancia y resistencia sin olvidar, la
+                                importancia de ser respetuoso con el medio ambiente por ser un material que se puede
+                                reciclar.</p>
+                            <p>Podemos forrar suelos, techos y paredes con diferentes tipos de madera y acabados.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section2" class="container-fluid text-bg-danger" style="padding:100px 20px;">
+            <h2 class="display-4 p-2">Fontaneria</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-two-collapseOne" aria-expanded="false"
+                            aria-controls="sect-two-collapseOne">
+                            Malos olores en las tuberías.
+                        </button>
+                    </h2>
+                    <div id="sect-two-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Los <strong>malos olores en las tuberías</strong> del baño y la cocina no son tan
+                                atípicos. De hecho, es uno de los problemas comunes de fontanería en el hogar.</p>
+                            <p>Puede ocurrir por diferentes motivos, así que para solventar es necesario saber de donde
+                                viene el olor y cuál puede ser la posible causa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-two-collapseTwo" aria-expanded="false"
+                            aria-controls="sect-two-collapseTwo">
+                            Grifos con cal y grifos oxidados
+                        </button>
+                    </h2>
+                    <div id="sect-two-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Esto suele ser muy frecuente cuando se vive en una zona donde el agua tiene mucha cal.
+                                Para solucionarlo se pueden usar productos químicos o en su defecto reemplazarlos por
+                                otros grifos o cabezales de ducha.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-two-collapseThree" aria-expanded="false"
+                            aria-controls="sect-two-collapseTwoThree">
+                            Aire en las tuberías
+                        </button>
+                    </h2>
+                    <div id="sect-two-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>En ocasiones el aire se acumula dentro de las tuberías, lo que provoca ruidos
+                                molestos.&nbsp; Sin embargo, esa no es precisamente la peor consecuencia. El aire en las
+                                tuberías produce nefastas consecuencias para las cañerías.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- https://www.stelorder.com/blog/mantenimiento-electrico/ -->
+        <div id="section3" class="container-fluid bg-secondary text-dark" style="padding:100px 20px;">
+            <h2 class="display-4 p-2">Electricidad</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-three-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Mantenimiento eléctrico correctivo
+                        </button>
+                    </h2>
+                    <div id="sect-three-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                La idea del mantenimiento correctivo es <b>actuar frente a un problema existente</b>.
+                                Ante una avería, fallo de funcionamiento o descenso del rendimiento de un equipo, el SAT
+                                acude para realizar un diagnóstico y proponer una resolución. A este tipo de
+                                mantenimiento también se le conoce como mantenimiento reactivo.
+                                <br>
+                                Las pruebas de mantenimiento correctivo se aplican como consecuencia de <b>daños
+                                    aleatorios</b>, normalmente en equipos cuya criticidad no es significativa, lo que
+                                significa que las consecuencias de su mal funcionamiento no son especialmente lesivas
+                                para la producción.
+                                <br>
+                                Hablamos normalmente de tareas consistentes en <b>reemplazar</b> el equipo averiado,
+                                realizar <b>cambios de piezas</b> o <b>reparar</b> los equipos que estén fallando.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-three-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Mantenimiento eléctrico preventivo
+                        </button>
+                    </h2>
+                    <div id="sect-three-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                En contraposición, el mantenimiento preventivo se basa en la idea de establecer una
+                                serie de <b>puntos de control</b>, que serán revisados periódicamente para reducir las
+                                probabilidades de que los equipos eléctricos presenten averías.
+                                <br>
+                                De esta forma, aunque no se suprima por completo la posibilidad de fallos, sí que se
+                                acota sensiblemente su aparición, teniendo en cuenta que estas actuaciones preventivas
+                                contribuyen a <b>alargar la vida útil</b> del equipamiento eléctrico.
+                                <br>
+                                Las pruebas consistentes en <b>comprobar relés o disyuntores</b>, cargas de batería o
+                                <b>verificaciones de corriente alterna o continua</b> son algunas tareas típicas del
+                                mantenimiento preventivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-three-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Mantenimiento eléctrico predictivo
+                        </button>
+                    </h2>
+                    <div id="sect-three-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                El mantenimiento predictivo constituye un pequeño cambio de paradigma que, mezclado con la tecnología adecuada, permite un mapeo más certero del rendimiento de los equipos, y permite dirigir las actuaciones de mantenimiento hacia los elementos que realmente lo necesitan.
+                                <br>
+                                La idea es <b>detectar el fallo antes de que se produzca.</b> Para ello, se obtienen datos en tiempo real de los equipos, los cuales pueden dar a entender la inminencia de una avería o de un error en su funcionamiento normal.
+                                <br>
+                                Algunas tareas típicas de mantenimiento predictivo comprenden <b>pruebas de infrarrojos</b> (para analizar la reflectividad y emisividad) o <b>análisis de la temperatura</b> de los equipos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- https://www.groncr.com/que-son-los-acabados-de-construccion/ -->
+        <div id="section4" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
+            <h2 class="display-4 p-2">Acabados</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-four-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            Acabados interiores verticales:
+                        </button>
+                    </h2>
+                    <div id="sect-four-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <b>Enlucido:</b> Se utiliza para conseguir una superficie de pared lisa gracias a la aplicación de base de mortero, cemento o yeso.
+                                </li>
+                                <li>
+                                    <b>Pinturas de interior:</b> Esta capa en el interior es meramente estética y se aplica sobre el enlucido.
+                                </li>
+                                <li>
+                                    <b>Alicatado:</b> Se suele usar el lugares húmedos como cuartos de baño o cocinas y consiste en una pared cubierta de azulejos, su función es impermeabilizar la pared.
+                                </li>
+                                <li>
+                                    <b>Estucado:</b> El estuco es una pasta de cal apagada y mármol pulverizado, se aplica en varias capas y se usa tanto para recubrir superficies interiores como exteriores.
+                                </li>
+                                <li>
+                                    <b>Enjalbegado:</b> La jabelga es una mezcla de cal, polvo, mármol y agua. Se aplica como una pintura.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-four-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Acabados interiores horizontales:
+                        </button>
+                    </h2>
+                    <div id="sect-four-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <b>Falsos techos:</b> Tienen la función de ocultar las tuberías de evacuación o instalaciones que pasan por el techo. Suelen ser de escayola y reducen la altura de la habitación.
+                                </li>
+                                <li>
+                                    <b>Pavimentos rígidos:</b> Son aquellos compuestos por piezas rígidas como: losetas, adoquines o baldosas y están hechos de piedra, cemento, cerámica, hormigón, madera, chapa de acero…
+                                </li>
+                                <li>
+                                    <b>Pavimentos continuos:</b> Se ejecutan en obra y hay que tener en cuenta las posibles juntas para evitar agrietamientos. Son pavimentos continuos el empedrado, engravillado, hormigón impreso o el microcemento.
+                                </li>
+                            </ul>
+                            <p>Para el acabado final suele ser necesario emplear otros materiales conocidos como intermedios que van entre el acabado final y los elementos portantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#sect-four-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Colores, formas, dimensiones y más son condicionamientos que influyen a la hora de colocar un material en una edificación.
+                        </button>
+                    </h2>
+                    <div id="sect-four-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                La estética es un factor importante a tomarse en cuenta cuando de <b>acabados de construcción</b> se trata, pues dan un toque personal y diseño peculiar a cualquier espacio. Más no, el único, se debe considerar que los <b>acabados de construcción</b> sirven, también, para proteger los materiales con que se levanta cualquier proyecto.
+                                <br>
+                                La madera siempre está en boga, sea en pisos, muebles o complementos decorativos, debido a la sensación de calidez que genera. En otra línea, en el mercado nacional, se puede encontrar revestimientos de gran tamaño como los porcelanatos en dimensiones XXL, o también los que imitan tablones de madera en variados formatos.
+                                <br>
+                                El <b>estilo industrial</b>, de a poco, ha ganado adeptos. Su máxima expresión destaca en pisos y paredes con textura de cemento. Podría lucir frío, más, su aspecto neutro y homogéneo es óptimo para ambientar cualquier espacio.
+                                <br>
+                                En la actualidad, las opciones de materiales es bastante diversa y se ajustan a diseños, presupuestos y necesidades, en general. Ya sea madera, piedra, aluminio, o cualquier otro producto, hay parámetros comunes para escoger los acabados de construcción más convenientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="linea"></div>
+    <section>
+        <h2 class="fs-1 text-center mt-md-5">Nuestros Patrocinadores</h2>
+        <div id="sponsors" class="container">
+            <div class="row align-items-start">
+                <div id="imagen" class="col text-center"><img src="img/makita.png" alt="makita"></div>
+                <div id="imagen" class="col text-center"><img src="img/Bauker.png" alt="bauker"></div>
+                <div id="imagen" class="col text-center"><img src="img/sika.png" alt="sika"></div>
+            </div>
+            <div class="row align-items-center">
+                <div id="imagen" class="col text-center"><img src="img/Topex.png" alt="Topex"></div>
+                <div id="imagen" class="col text-center"><img src="img/cemex.png" alt="cemex"></div>
+                <div id="imagen" class="col text-center"><img src="img/cat.png" alt="caterpillar"></div>
+            </div>
+        </div>
+    </section>
+    <div class="linea"></div>
+    <section id="formulario" class="mt-3 mb-3">
+        <h2 class="text-center ">CONSULTA POR NUESTROS SERVICIOS</h2>
+        <div class="container border-1">
+            <div class="row">
+                <div>
                     <div class="input-group mb-3">
-                        <form class="d-fluid col" role="search">
-                            <input class="form-control me-2 col col-sm-3"
-                                type="search" placeholder="Buscar"
-                                aria-label="Buscar">
-                            <button class="btn btn-outline-ligth col col-sm-3"
-                                type="submit">Buscar</button>
-                        </form>
+                        <label class="input-group-text" for="inputGroupSelect01">Servicio a solicitar</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Seleccione un servicio...</option>
+                            <option value="1">Carpinteria</option>
+                            <option value="2">Fontaneria</option>
+                            <option value="3">Electricidad</option>
+                            <option value="3">Acabados</option>
+                            <option value="3">Multiple</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Correo electronico</span>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo"
+                            aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="container ">
-                    <div class="row justify-content-md-center">
-                        <div class="dropdown drop-inicio">
-                            <a class="btn " data-bs-toggle="dropdown"
-                                aria-expanded="false">CARPINTERIA</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                            <a class="btn " data-bs-toggle="dropdown"
-                                aria-expanded="false">FONTANERIA</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                            <a class="btn " data-bs-toggle="dropdown"
-                                aria-expanded="false">ELECTRICIDAD</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                            <a class="btn " data-bs-toggle="dropdown"
-                                aria-expanded="false">ACABADOS</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre de la persona que solicita el
+                        servicio</span>
+                    <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
-            </header>
-            <div class="container">
-                <!--Contenido principal-->
-                <div id="tarjetas" class="container row col gap-3">
-                    <!-- Nav bar vertical -->
-                    <div class="card col col-sm-3" style="width: 18rem;">
-                        <img src="images/carpinteria.jpg" class="card-img-top"
-                            alt="img-carpintero">
-                        <div class="card-body">
-                            <h5 class="card-title">CARPINTERIA</h5>
-                            <p class="card-text">Some quick example text to
-                                build on the card title and make up the bulk of
-                                the
-                                card's content.</p>
-                                <div class="cont-one container-collapse one">
-                                    <a href="#colap-one" class="btn btn-primary" data-bs-toggle="collapse">Saber más</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="card col col-sm-3" style="width: 18rem;">
-                        <img src="images/Fontaneria.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">FONTANERIA</h5>
-                            <p class="card-text">Some quick example text to
-                                build on the card title and make up the bulk of
-                                the
-                                card's content.</p>
-                                <div class="cont-one container-collapse one" id="ver-mas">
-                                    <a href="#colap-two" class="btn btn-primary" data-bs-toggle="collapse">Saber más</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="card col col-sm-3" style="width: 18rem;">
-                        <img src="images/electricista.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ELECTRICIDAD</h5>
-                            <p class="card-text">Some quick example text to
-                                build on the card title and make up the bulk of
-                                the
-                                card's content.</p>
-                                <div class="cont-one container-collapse one">
-                                    <a href="#colap-three" class="btn btn-primary" data-bs-toggle="collapse">Saber más</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="card col col-sm-3" style="width: 18rem;">
-                        <img src="images/acabados.png" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ACABADOS</h5>
-                            <p class="card-text">Some quick example text to
-                                build on the card title and make up the bulk of
-                                the
-                                card's content.</p>
-                                <div class="cont-one container-collapse one">
-                                    <a href="#colap-four" class="btn btn-primary" data-bs-toggle="collapse">Saber más</a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Numero telefonico</span>
+                <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Direccion</span>
+            <input type="text" class="form-control" placeholder="Calle 0 Carrera 0 # 0" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text ">Barrio</span>
+            <input type="text" class="form-control" placeholder="Barrio" aria-label="basic-addon">
+            <span class="input-group-text">Ciudad</span>
+            <input type="text" class="form-control" placeholder="Ciudad" aria-label="basic-addon">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Describa la solicitud</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary-ligth border-2" type="button">Enviar Solicitud</button>
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <div class="linea"></div>
+<footer id ="footer" class="text-center text-lg-start text-muted  ">
+        <br>
+        <section id="" class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4  text-white">
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-white"></i>HogarTech
+                </h6>
+                <p>
+                    HogarTech es una empresa de servicios técnicos para el hogar, especializada en fontanería, electricidad, carpintería y acabados. Nuestro equipo de profesionales altamente capacitados y experimentados está comprometido en brindar servicios de calidad y soluciones eficaces a las necesidades de nuestros clientes.
+                </p>
             </div>
             
-            <div class="big-acordion container">
-                <div class="cont-one container-collapse">
-                    <div class="collapse" id="colap-one">
-                        <div class="accordion big-cont" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header cont" id="headingOne">
-                                    <button class="accordion-button solution" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img class="IC" src="Icon - SDH/icon-estanteria.png" alt="icon-bad-odon">Estanterías Personalizadas1. 
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Resulta algo normal que nos cansemos de la presencia del
-                                            interior de la casa y que queramos cambiarla. Los
-                                            estantes juegan un papel fundamental. Sustituir un
-                                            mueble de estantería y cambiarlo por uno más nuevo puede
-                                            ayudar a una transformación radical de la imagen de
-                                            nuestro hogar.
-                                            <br>
-                                            Nuestros expertos carpinteros te pueden ayudar con la
-                                            creación de libreros, lo mismo de madera antigua que de
-                                            las variantes más modernas.
-                                            <br>
-                                            Necesitas un estante para poner adornos y cuadros en la
-                                            pared? Hay múltiples formas con las que la pared de tu
-                                            sala o el cuarto pueden cambiar.
-                                            <br>
-                                            Hay muchas estanterías personalizadas modernas que te
-                                            ayudan a incorporar un toque original a tu pared. Nos
-                                            puedes llamar a nuestro teléfono y nuestros carpinteros
-                                            te ayudan con todas las ideas y te dan los mejores
-                                            precios.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <img class="IC" src="Icon - SDH/icon-armario.png" alt="icon-oxide" aria-expanded="true">Construcción de closet de cuarto y walking closet.
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        El espacio nunca alcanza para la ropa y los zapatos. Ese es
-                                    un problema común en la mayoría de las casas: los closets
-                                    resultan muy pequeños para lo que tenemos. Se nos han dado
-                                    casos de clientes que han hecho cambios de closets tres
-                                    veces ya, pues la familia crece y la tenencia de ropas y
-                                    zapatos también.
-                                    <br>
-                                    Acudir a un experto de carpintería para construir un closet
-                                    o vestidor no es una idea descabellada. Sencillamente el
-                                    carpintero profesional te va a diseñar el closet a las
-                                    justas medidas. Y le va a dar la forma que más te guste.
-                                    <br>
-                                    La asesoría de un profesional experto en carpintería te
-                                    ayuda a generar nuevas ideas. Muchas veces el cliente tiene
-                                    un proyecto y cuando se reúne con el carpintero su closet
-                                    toma nuevas dimensiones y ocupa diferentes espacios.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img class="IC" src="Icon - SDH/icon-cocina.png" alt="icon-tapado" aria-expanded="true">Construcción de Gabinetes de Cocina y Mesetas.
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Una cocina cambia por completo su imagen si la meseta y
-                                            sus gabinetes son transformados. Tenemos muchos clientes
-                                            que se quejan de que la imagen de la casa es demasiado
-                                            antigua y necesitan cambiar esta imagen hacia una
-                                            variante más moderna.
-                                            <br>
-                                            Por esto mismo, la creación de gabinetes de cocina es
-                                            uno de los trabajos preferidos por nuestros carpinteros
-                                            en Miami y el Sur de la Florida. Y ello se debe a que es
-                                            un trabajo delicado que incide directamente en el gusto
-                                            de la gente.
-                                            <br><br>
-                                            ¿Qué materiales se usan para fabricar los muebles de
-                                            cocina?<br>Lo mismo la meseta de la cocina que las islas
-                                            de la cocina por lo general tienen su base de madera.
-                                            Pero hay varios tipos:<br></p>
-                                        <ul>
-                                            <li>muebles de madera de aglomerado: se hacen con restos
-                                                de madera compactos. Son más baratos. Importante: es
-                                                necesario que sean resistentes al agua, sino el
-                                                problema se genera es grande.</li>
-                                            <li>
-                                                Muebles de madera de fibra prensada. Tienen más
-                                                calidad que los anteriores y son más resistentes al
-                                                agua y a los golpes externos.
-                                            </li>
-                                            <li>
-                                                Muebles de madera maciza: Es más caro, construido a
-                                                base de capas finas de madera que se unen.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4  text-white">
+                
+                <h6 class="text-uppercase fw-bold mb-4">
+                Nuestros Servicios
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Carpinteria</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Fontaneria</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Electricidad</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Acabados</a>
+                </p>
             </div>
-            <div class="big-acordion container">
-                <div class="cont-one container-collapse">
-                    <div class="collapse" id="colap-two">
-                        <div class="accordion big-cont" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header cont" id="headingOne">
-                                    <button class="accordion-button solution" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img class="IC" src="Icon - SDH/icon-estanteria.png" alt="icon-bad-odon">2 
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Resulta algo normal que nos cansemos de la presencia del
-                                            interior de la casa y que queramos cambiarla. Los
-                                            estantes juegan un papel fundamental. Sustituir un
-                                            mueble de estantería y cambiarlo por uno más nuevo puede
-                                            ayudar a una transformación radical de la imagen de
-                                            nuestro hogar.
-                                            <br>
-                                            Nuestros expertos carpinteros te pueden ayudar con la
-                                            creación de libreros, lo mismo de madera antigua que de
-                                            las variantes más modernas.
-                                            <br>
-                                            Necesitas un estante para poner adornos y cuadros en la
-                                            pared? Hay múltiples formas con las que la pared de tu
-                                            sala o el cuarto pueden cambiar.
-                                            <br>
-                                            Hay muchas estanterías personalizadas modernas que te
-                                            ayudan a incorporar un toque original a tu pared. Nos
-                                            puedes llamar a nuestro teléfono y nuestros carpinteros
-                                            te ayudan con todas las ideas y te dan los mejores
-                                            precios.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <img class="IC" src="Icon - SDH/icon-armario.png" alt="icon-oxide" aria-expanded="true">Construcción de closet de cuarto y walking closet.
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        El espacio nunca alcanza para la ropa y los zapatos. Ese es
-                                    un problema común en la mayoría de las casas: los closets
-                                    resultan muy pequeños para lo que tenemos. Se nos han dado
-                                    casos de clientes que han hecho cambios de closets tres
-                                    veces ya, pues la familia crece y la tenencia de ropas y
-                                    zapatos también.
-                                    <br>
-                                    Acudir a un experto de carpintería para construir un closet
-                                    o vestidor no es una idea descabellada. Sencillamente el
-                                    carpintero profesional te va a diseñar el closet a las
-                                    justas medidas. Y le va a dar la forma que más te guste.
-                                    <br>
-                                    La asesoría de un profesional experto en carpintería te
-                                    ayuda a generar nuevas ideas. Muchas veces el cliente tiene
-                                    un proyecto y cuando se reúne con el carpintero su closet
-                                    toma nuevas dimensiones y ocupa diferentes espacios.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img class="IC" src="Icon - SDH/icon-cocina.png" alt="icon-tapado" aria-expanded="true">Construcción de Gabinetes de Cocina y Mesetas.
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Una cocina cambia por completo su imagen si la meseta y
-                                            sus gabinetes son transformados. Tenemos muchos clientes
-                                            que se quejan de que la imagen de la casa es demasiado
-                                            antigua y necesitan cambiar esta imagen hacia una
-                                            variante más moderna.
-                                            <br>
-                                            Por esto mismo, la creación de gabinetes de cocina es
-                                            uno de los trabajos preferidos por nuestros carpinteros
-                                            en Miami y el Sur de la Florida. Y ello se debe a que es
-                                            un trabajo delicado que incide directamente en el gusto
-                                            de la gente.
-                                            <br><br>
-                                            ¿Qué materiales se usan para fabricar los muebles de
-                                            cocina?<br>Lo mismo la meseta de la cocina que las islas
-                                            de la cocina por lo general tienen su base de madera.
-                                            Pero hay varios tipos:<br></p>
-                                        <ul>
-                                            <li>muebles de madera de aglomerado: se hacen con restos
-                                                de madera compactos. Son más baratos. Importante: es
-                                                necesario que sean resistentes al agua, sino el
-                                                problema se genera es grande.</li>
-                                            <li>
-                                                Muebles de madera de fibra prensada. Tienen más
-                                                calidad que los anteriores y son más resistentes al
-                                                agua y a los golpes externos.
-                                            </li>
-                                            <li>
-                                                Muebles de madera maciza: Es más caro, construido a
-                                                base de capas finas de madera que se unen.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+                <h6 class="text-uppercase fw-bold mb-4  text-white">
+                Accesos Rapidos
+                </h6>
+                <p>
+                <a href="#!" class="text-reset  text-white">Acerca de Nosotros</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset  text-white">Politica de privacidad</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset text-white">Servicios</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset text-white">Ayuda</a>
+                </p>
             </div>
-            <div class="big-acordion container">
-                <div class="cont-one container-collapse">
-                    <div class="collapse" id="colap-three">
-                        <div class="accordion big-cont" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header cont" id="headingOne">
-                                    <button class="accordion-button solution" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img class="IC" src="Icon - SDH/icon-estanteria.png" alt="icon-bad-odon">3 
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Resulta algo normal que nos cansemos de la presencia del
-                                            interior de la casa y que queramos cambiarla. Los
-                                            estantes juegan un papel fundamental. Sustituir un
-                                            mueble de estantería y cambiarlo por uno más nuevo puede
-                                            ayudar a una transformación radical de la imagen de
-                                            nuestro hogar.
-                                            <br>
-                                            Nuestros expertos carpinteros te pueden ayudar con la
-                                            creación de libreros, lo mismo de madera antigua que de
-                                            las variantes más modernas.
-                                            <br>
-                                            Necesitas un estante para poner adornos y cuadros en la
-                                            pared? Hay múltiples formas con las que la pared de tu
-                                            sala o el cuarto pueden cambiar.
-                                            <br>
-                                            Hay muchas estanterías personalizadas modernas que te
-                                            ayudan a incorporar un toque original a tu pared. Nos
-                                            puedes llamar a nuestro teléfono y nuestros carpinteros
-                                            te ayudan con todas las ideas y te dan los mejores
-                                            precios.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <img class="IC" src="Icon - SDH/icon-armario.png" alt="icon-oxide" aria-expanded="true">Construcción de closet de cuarto y walking closet.
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        El espacio nunca alcanza para la ropa y los zapatos. Ese es
-                                    un problema común en la mayoría de las casas: los closets
-                                    resultan muy pequeños para lo que tenemos. Se nos han dado
-                                    casos de clientes que han hecho cambios de closets tres
-                                    veces ya, pues la familia crece y la tenencia de ropas y
-                                    zapatos también.
-                                    <br>
-                                    Acudir a un experto de carpintería para construir un closet
-                                    o vestidor no es una idea descabellada. Sencillamente el
-                                    carpintero profesional te va a diseñar el closet a las
-                                    justas medidas. Y le va a dar la forma que más te guste.
-                                    <br>
-                                    La asesoría de un profesional experto en carpintería te
-                                    ayuda a generar nuevas ideas. Muchas veces el cliente tiene
-                                    un proyecto y cuando se reúne con el carpintero su closet
-                                    toma nuevas dimensiones y ocupa diferentes espacios.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img class="IC" src="Icon - SDH/icon-cocina.png" alt="icon-tapado" aria-expanded="true">Construcción de Gabinetes de Cocina y Mesetas.
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Una cocina cambia por completo su imagen si la meseta y
-                                            sus gabinetes son transformados. Tenemos muchos clientes
-                                            que se quejan de que la imagen de la casa es demasiado
-                                            antigua y necesitan cambiar esta imagen hacia una
-                                            variante más moderna.
-                                            <br>
-                                            Por esto mismo, la creación de gabinetes de cocina es
-                                            uno de los trabajos preferidos por nuestros carpinteros
-                                            en Miami y el Sur de la Florida. Y ello se debe a que es
-                                            un trabajo delicado que incide directamente en el gusto
-                                            de la gente.
-                                            <br><br>
-                                            ¿Qué materiales se usan para fabricar los muebles de
-                                            cocina?<br>Lo mismo la meseta de la cocina que las islas
-                                            de la cocina por lo general tienen su base de madera.
-                                            Pero hay varios tipos:<br></p>
-                                        <ul>
-                                            <li>muebles de madera de aglomerado: se hacen con restos
-                                                de madera compactos. Son más baratos. Importante: es
-                                                necesario que sean resistentes al agua, sino el
-                                                problema se genera es grande.</li>
-                                            <li>
-                                                Muebles de madera de fibra prensada. Tienen más
-                                                calidad que los anteriores y son más resistentes al
-                                                agua y a los golpes externos.
-                                            </li>
-                                            <li>
-                                                Muebles de madera maciza: Es más caro, construido a
-                                                base de capas finas de madera que se unen.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  text-white">
+                <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
+                <a class="btn"
+                            href="https://www.google.com.co/maps/place/Zona+Franca+Santander/@7.0612311,-73.1285163,17.5z/data=!4m6!3m5!1s0x8e683f18ef59f9a1:0xffbf118f3e8f20c!8m2!3d7.0613533!4d-73.125961!16s%2Fg%2F124syq8mc">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/143/143960.png"
+                                width="40px" alt="">
+                </a>
+                <a class="btn"
+                            href="mailto:hogartech@correoejemplo.com">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/10308/10308979.png"
+                                width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://www.whatsapp.com/?lang=es">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
+                        width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://es-la.facebook.com/">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
+                        width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://www.instagram.com/">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
+                        width="40px" alt="">
+                </a>
             </div>
-            <div class="big-acordion container">
-                <div class="cont-one container-collapse">
-                    <div class="collapse" id="colap-four">
-                        <div class="accordion big-cont" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header cont" id="headingOne">
-                                    <button class="accordion-button solution" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img class="IC" src="Icon - SDH/icon-estanteria.png" alt="icon-bad-odon">4 
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Resulta algo normal que nos cansemos de la presencia del
-                                            interior de la casa y que queramos cambiarla. Los
-                                            estantes juegan un papel fundamental. Sustituir un
-                                            mueble de estantería y cambiarlo por uno más nuevo puede
-                                            ayudar a una transformación radical de la imagen de
-                                            nuestro hogar.
-                                            <br>
-                                            Nuestros expertos carpinteros te pueden ayudar con la
-                                            creación de libreros, lo mismo de madera antigua que de
-                                            las variantes más modernas.
-                                            <br>
-                                            Necesitas un estante para poner adornos y cuadros en la
-                                            pared? Hay múltiples formas con las que la pared de tu
-                                            sala o el cuarto pueden cambiar.
-                                            <br>
-                                            Hay muchas estanterías personalizadas modernas que te
-                                            ayudan a incorporar un toque original a tu pared. Nos
-                                            puedes llamar a nuestro teléfono y nuestros carpinteros
-                                            te ayudan con todas las ideas y te dan los mejores
-                                            precios.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <img class="IC" src="Icon - SDH/icon-armario.png" alt="icon-oxide" aria-expanded="true">Construcción de closet de cuarto y walking closet.
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        El espacio nunca alcanza para la ropa y los zapatos. Ese es
-                                    un problema común en la mayoría de las casas: los closets
-                                    resultan muy pequeños para lo que tenemos. Se nos han dado
-                                    casos de clientes que han hecho cambios de closets tres
-                                    veces ya, pues la familia crece y la tenencia de ropas y
-                                    zapatos también.
-                                    <br>
-                                    Acudir a un experto de carpintería para construir un closet
-                                    o vestidor no es una idea descabellada. Sencillamente el
-                                    carpintero profesional te va a diseñar el closet a las
-                                    justas medidas. Y le va a dar la forma que más te guste.
-                                    <br>
-                                    La asesoría de un profesional experto en carpintería te
-                                    ayuda a generar nuevas ideas. Muchas veces el cliente tiene
-                                    un proyecto y cuando se reúne con el carpintero su closet
-                                    toma nuevas dimensiones y ocupa diferentes espacios.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img class="IC" src="Icon - SDH/icon-cocina.png" alt="icon-tapado" aria-expanded="true">Construcción de Gabinetes de Cocina y Mesetas.
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Una cocina cambia por completo su imagen si la meseta y
-                                            sus gabinetes son transformados. Tenemos muchos clientes
-                                            que se quejan de que la imagen de la casa es demasiado
-                                            antigua y necesitan cambiar esta imagen hacia una
-                                            variante más moderna.
-                                            <br>
-                                            Por esto mismo, la creación de gabinetes de cocina es
-                                            uno de los trabajos preferidos por nuestros carpinteros
-                                            en Miami y el Sur de la Florida. Y ello se debe a que es
-                                            un trabajo delicado que incide directamente en el gusto
-                                            de la gente.
-                                            <br><br>
-                                            ¿Qué materiales se usan para fabricar los muebles de
-                                            cocina?<br>Lo mismo la meseta de la cocina que las islas
-                                            de la cocina por lo general tienen su base de madera.
-                                            Pero hay varios tipos:<br></p>
-                                        <ul>
-                                            <li>muebles de madera de aglomerado: se hacen con restos
-                                                de madera compactos. Son más baratos. Importante: es
-                                                necesario que sean resistentes al agua, sino el
-                                                problema se genera es grande.</li>
-                                            <li>
-                                                Muebles de madera de fibra prensada. Tienen más
-                                                calidad que los anteriores y son más resistentes al
-                                                agua y a los golpes externos.
-                                            </li>
-                                            <li>
-                                                Muebles de madera maciza: Es más caro, construido a
-                                                base de capas finas de madera que se unen.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <a class="btn btn-ligth solicitud" href="formsQE.html" role="button">Solicitar servicios</a>
-            <footer class="sticky">
-                <div class="bg-bluee border row">
-                    <div class="col col-md-6 somos ">
-                        <h2>
-                            ¿Quienes somos?
-                        </h2>
-                        <p class="text-justify">HogarTech es una empresa de
-                            servicios técnicos para el hogar, especializada
-                            en fontanería,
-                            electricidad, carpintería y acabados. Nuestro
-                            equipo de profesionales altamente capacitados y
-                            experimentados está comprometido en brindar
-                            servicios de calidad y soluciones eficaces a las
-                            necesidades de nuestros clientes.</p>
-                    </div>
-                    <div class="col col-md-6 ">
-                        <h2>
-                            Contactanos:
-                        </h2>
-                        <div class="justify-content-center">
-                            <a class="btn"
-                                href="https://www.google.com.co/maps/place/Zona+Franca+Santander/@7.0612311,-73.1285163,17.5z/data=!4m6!3m5!1s0x8e683f18ef59f9a1:0xffbf118f3e8f20c!8m2!3d7.0613533!4d-73.125961!16s%2Fg%2F124syq8mc">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/143/143960.png"
-                                    width="40px" alt="">
-                            </a>
-                            <a class="btn"
-                                href="mailto:hogartech@correoejemplo.com">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/10308/10308979.png"
-                                    width="40px" alt="">
-                            </a>
-                            <a class="btn"
-                                href="https://www.whatsapp.com/?lang=es">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
-                                    width="40px" alt="">
-                            </a>
-                            <a class="btn"
-                                href="https://es-la.facebook.com/">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
-                                    width="40px" alt="">
-                            </a>
-                            <a class="btn"
-                                href="https://www.instagram.com/">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
-                                    width="40px" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
-    </body>
+        </section>
+        <div class="text-center p-4  text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023-
+        <a class="text-reset fw-bold " href="https://github.com/DJangoo00/SDH/">CampusLand</a>
+        </div>
+</footer>
+</body>
+
 </html>
