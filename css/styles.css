@@ -67,3 +67,7 @@ h2{
 .btn-st-3{
     background-color:rgb(61, 140, 243) !important;
 }
+.headder-btn {
+    text-decoration: none;
+    color: white;
+}
