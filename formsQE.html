@@ -5,227 +5,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HogarTech</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" defer
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container-fluid bg-blue">
-        <header>
-            <div class="bg-bluee border bann-position">
-                <h1 class="banner"><span class="H">Hogar</span><span class="T">Tech</span></h1>
-                <h3>Tu hogar en buenas manos</h3>
-                <div class="input-group mb-3">
-                    <form class="d-fluid col" role="search">
-                        <input class="form-control me-2 col col-sm-3" type="search" placeholder="Buscar"
-                            aria-label="Buscar">
-                        <button class="btn btn-outline-ligth col col-sm-3" type="submit">Buscar</button>
-                    </form>
+    <header id="header" class="m-0 d-grid">
+        <div id="header_1" class="m-0 justify-content-center nav"><img class="logo navbar-brand" src="img/logo.png" /></div>
+        <div id="nav_bar" class="d-flex ">
+            <br>
+            <div class="container d-flex gap-2 justify-content-center">
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" role="button">
+                        Inicio
+                    </a>
                 </div>
-            </div>
-    </div>
-    <div class="container text-center">
-        <div class="row">
-            <div class="dropdown drop-inicio ">
-                <a class="btn btn-secondary-ligth dropdown-toggle col col-sm-3" data-bs-toggle="dropdown"
-                    aria-expanded="false">CARPINTERIA</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                <a class="btn btn-secondary-ligth dropdown-toggle col col-sm-3" data-bs-toggle="dropdown"
-                    aria-expanded="false">FONTANERIA</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                <a class="btn btn-secondary-ligth dropdown-toggle col col-sm-3" data-bs-toggle="dropdown"
-                    aria-expanded="false">ELECTRICIDAD</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                <a class="btn btn-secondary-ligth dropdown-toggle col col-sm-3" data-bs-toggle="dropdown"
-                    aria-expanded="false">ACABADOS</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                    </a>
+        
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Carpinteria</a></li>
+                        <li><a class="dropdown-item" href="#">Fontaneria</a></li>
+                        <li><a class="dropdown-item" href="#">Electricidad</a></li>
+                        <li><a class="dropdown-item" href="#">Acabados</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Conócenos
+                    </a>
+        
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#contact">Redes Sociales</a></li>
+                        <li><a class="dropdown-item" href="#sponsor">Nuestros Patrocinadores</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" role="button">
+                        Opiniones
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" role="button">
+                        Solicita nuestros servicios
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
     </header>
-    <div class="container">
-        <div class="row">
-            <div>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Servicio a solicitar</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Seleccione un servicio...</option>
-                        <option value="1">Carpinteria</option>
-                        <option value="2">Fontaneria</option>
-                        <option value="3">Electricidad</option>
-                        <option value="3">Acabados</option>
-                        <option value="3">Multiple</option>        
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Correo electronico</span>
-                    <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                </div>
+    <div class="linea"></div>
+    <section id="formulario" class="mt-3 mb-3">
+        <h2 class="text-center ">CONSULTA POR NUESTROS SERVICIOS</h2>
+        <div class="container border-1">
+            <div class="row">
+                <div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Nombre de la persona que solicita el servicio</span>
-                        <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username" aria-describedby="basic-addon1">
+                        <label class="input-group-text" for="inputGroupSelect01">Servicio a solicitar</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Seleccione un servicio...</option>
+                            <option value="1">Carpinteria</option>
+                            <option value="2">Fontaneria</option>
+                            <option value="3">Electricidad</option>
+                            <option value="3">Acabados</option>
+                            <option value="3">Multiple</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Correo electronico</span>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo"
+                            aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Numero telefonico</span>
-                    <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Direccion</span>
-                    <input type="text" class="form-control" placeholder="Calle 0 Carrera 0 # 0" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Barrio</span>
-                        <input type="text" class="form-control" placeholder="Barrio" aria-label="basic-addon">
-                    <span class="input-group-text">Ciudad</span>
-                        <input type="text" class="form-control" placeholder="Ciudad" aria-label="basic-addon">
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text">Describa la solicitud</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <span class="input-group-text" id="basic-addon1">Nombre de la persona que solicita el
+                        servicio</span>
+                    <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-secondary-ligth" type="button">Enviar Solicitud</button>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Numero telefonico</span>
+                <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo" aria-label="Username"
+                    aria-describedby="basic-addon1">
             </div>
         </div>
-        
-    </div>
-    <!-- Footer -->
-        <footer class="text-center text-lg-start bg-bluee text-muted text-white">
-            <br>
-            <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3"></i>HogarTech
-                    </h6>
-                    <p class="text-white">
-                        HogarTech es una empresa de servicios técnicos para el hogar, especializada en fontanería, electricidad, carpintería y acabados. Nuestro equipo de profesionales altamente capacitados y experimentados está comprometido en brindar servicios de calidad y soluciones eficaces a las necesidades de nuestros clientes.
-                    </p>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                    Nuestros Servicios
-                    </h6>
-                    <p>
-                    <a href="#!" class="text-reset">Carpinteria</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Fontaneria</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Electricidad</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Acabados</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                    Accesos Rapidos
-                    </h6>
-                    <p>
-                    <a href="#!" class="text-reset">Acerca de Nosotros</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Politica de privacidad</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Servicios</a>
-                    </p>
-                    <p>
-                    <a href="#!" class="text-reset">Ayuda</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
-                    <a class="btn"
-                                href="https://www.google.com.co/maps/place/Zona+Franca+Santander/@7.0612311,-73.1285163,17.5z/data=!4m6!3m5!1s0x8e683f18ef59f9a1:0xffbf118f3e8f20c!8m2!3d7.0613533!4d-73.125961!16s%2Fg%2F124syq8mc">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/143/143960.png"
-                                    width="40px" alt="">
-                    </a>
-                    <a class="btn"
-                                href="mailto:hogartech@correoejemplo.com">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/10308/10308979.png"
-                                    width="40px" alt="">
-                    </a>
-                    <a class="btn"
-                        href="https://www.whatsapp.com/?lang=es">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
-                            width="40px" alt="">
-                    </a>
-                    <a class="btn"
-                        href="https://es-la.facebook.com/">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
-                            width="40px" alt="">
-                    </a>
-                    <a class="btn"
-                        href="https://www.instagram.com/">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
-                            width="40px" alt="">
-                    </a>
-                </div>
-                <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-            </div>
-            </section>
-            <!-- Section: Links  -->
-        
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2023-
-            <a class="text-reset fw-bold" href="https://github.com/DJangoo00/SDH/">CampusLand</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-</body>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Direccion</span>
+            <input type="text" class="form-control" placeholder="Calle 0 Carrera 0 # 0" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text ">Barrio</span>
+            <input type="text" class="form-control" placeholder="Barrio" aria-label="basic-addon">
+            <span class="input-group-text">Ciudad</span>
+            <input type="text" class="form-control" placeholder="Ciudad" aria-label="basic-addon">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Describa la solicitud</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary-ligth border-2" type="button">Enviar Solicitud</button>
+        </div>
+        </div>
 
+        </div>
+    </section>
+    <div class="linea"></div>
+<footer id ="footer" class="text-center text-lg-start text-muted  ">
+        <br>
+        <section id="" class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4  text-white">
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-white"></i>HogarTech
+                </h6>
+                <p>
+                    HogarTech es una empresa de servicios técnicos para el hogar, especializada en fontanería, electricidad, carpintería y acabados. Nuestro equipo de profesionales altamente capacitados y experimentados está comprometido en brindar servicios de calidad y soluciones eficaces a las necesidades de nuestros clientes.
+                </p>
+            </div>
+            
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4  text-white">
+                
+                <h6 class="text-uppercase fw-bold mb-4">
+                Nuestros Servicios
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Carpinteria</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Fontaneria</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Electricidad</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Acabados</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+                <h6 class="text-uppercase fw-bold mb-4  text-white">
+                Accesos Rapidos
+                </h6>
+                <p>
+                <a href="#!" class="text-reset  text-white">Acerca de Nosotros</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset  text-white">Politica de privacidad</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset text-white">Servicios</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset text-white">Ayuda</a>
+                </p>
+            </div>
+            <div id="contact"class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  text-white">
+                <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
+                <a class="btn"
+                            href="https://www.google.com.co/maps/place/Zona+Franca+Santander/@7.0612311,-73.1285163,17.5z/data=!4m6!3m5!1s0x8e683f18ef59f9a1:0xffbf118f3e8f20c!8m2!3d7.0613533!4d-73.125961!16s%2Fg%2F124syq8mc">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/143/143960.png"
+                                width="40px" alt="">
+                </a>
+                <a class="btn"
+                            href="mailto:hogartech@correoejemplo.com">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/10308/10308979.png"
+                                width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://www.whatsapp.com/?lang=es">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
+                        width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://es-la.facebook.com/">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
+                        width="40px" alt="">
+                </a>
+                <a class="btn"
+                    href="https://www.instagram.com/">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
+                        width="40px" alt="">
+                </a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <div class="text-center p-4  text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023-
+        <a class="text-reset fw-bold " href="https://github.com/DJangoo00/SDH/">CampusLand</a>
+        </div>
+</footer>
+</body>
 </html>
