@@ -16,19 +16,51 @@
 </head>
 
 <body>
-    <header id="header" class="m-0 d-grid ">
-        <div id="header_1" class="m-0"><img class="logo" src="img/logo.png" />
-        </div>
-        <div id="nav_bar" class="gap-1 d-grid m-0">
-            <div id="header_element" class=" bg-danger text-center d-grid"><a class="headder-btn" href="#header">Inicio</a></div>
-            <div id="header_element" class=" bg-danger text-center d-grid"><a class="headder-btn" href="#section1">Servicios</a></div>
-            <div id="header_element" class=" bg-danger text-center d-grid"><a class="headder-btn" href="#footer">Conocenos</a></div>
-            <div id="header_element" class=" bg-danger text-center d-grid"><a class="headder-btn" href="#footer">Opiniones</a></div>
-            <div class="dropdown">
+    <header id="header" class="m-0 d-grid">
+        <div id="header_1" class="m-0 justify-content-center nav"><img class="logo navbar-brand" src="img/logo.png" /></div>
+        <div id="nav_bar" class="d-flex ">
+            <br>
+            <div class="container d-flex gap-2 justify-content-center">
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" role="button">
+                        Inicio
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                    </a>
+        
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Carpinteria</a></li>
+                        <li><a class="dropdown-item" href="#">Fontaneria</a></li>
+                        <li><a class="dropdown-item" href="#">Electricidad</a></li>
+                        <li><a class="dropdown-item" href="#">Acabados</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Conócenos
+                    </a>
+        
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#contact">Redes Sociales</a></li>
+                        <li><a class="dropdown-item" href="#sponsor">Nuestros Patrocinadores</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" role="button">
+                        Opiniones
+                    </a>
+                </div>
+                <div class="dropdown">
                     <a class="btn btn-light" href="formsQE.html" role="button">
                         Solicita nuestros servicios
                     </a>
                 </div>
+            </div>
         </div>
     </header>
     
@@ -51,37 +83,24 @@
                     <a href="#section1" class="nav-link">
                         <img src="images/CA/trucos-de-carpinteria-1024x576.jpg" class="d-block w-100" alt="...">
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <a href="#section2" class="nav-link">
                         <img src="images/FO/fontaneria.jpg" class="d-block w-100" alt="...">
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
+                    
                 </div>
                 <div class="carousel-item">
                     <a href="#section3" class="nav-link" onclick="">
                         <img src="images/EL/electrico.jpg" class="d-block w-100" alt="...">
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+                    
                 </div>
                 <div class="carousel-item">
                     <a href="#section4" class="nav-link" onclick="">
                         <img src="images/AC/acabados.jpg" class="d-block w-100" alt="...">
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+                    
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -417,7 +436,7 @@
 
 
     <div class="linea"></div>
-    <section>
+    <section id="sponsor">
         <h2 class="fs-1 text-center mt-md-5">Nuestros Patrocinadores</h2>
         <div id="sponsors" class="container">
             <div class="row align-items-start">
@@ -430,65 +449,6 @@
                 <div id="imagen" class="col text-center"><img src="img/cemex.png" alt="cemex"></div>
                 <div id="imagen" class="col text-center"><img src="img/cat.png" alt="caterpillar"></div>
             </div>
-        </div>
-    </section>
-    <div class="linea"></div>
-    <section id="formulario" class="mt-3 mb-3">
-        <h2 class="text-center ">CONSULTA POR NUESTROS SERVICIOS</h2>
-        <div class="container border-1">
-            <div class="row">
-                <div>
-                    <div class="input-group mb-3">
-                        <label class="input-group-text" for="inputGroupSelect01">Servicio a solicitar</label>
-                        <select class="form-select" id="inputGroupSelect01">
-                            <option selected>Seleccione un servicio...</option>
-                            <option value="1">Carpinteria</option>
-                            <option value="2">Fontaneria</option>
-                            <option value="3">Electricidad</option>
-                            <option value="3">Acabados</option>
-                            <option value="3">Multiple</option>
-                        </select>
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Correo electronico</span>
-                        <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Nombre de la persona que solicita el
-                        servicio</span>
-                    <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Numero telefonico</span>
-                <input type="text" class="form-control" placeholder="ejemplo@correo.ejemplo" aria-label="Username"
-                    aria-describedby="basic-addon1">
-            </div>
-        </div>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Direccion</span>
-            <input type="text" class="form-control" placeholder="Calle 0 Carrera 0 # 0" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-            <span class="input-group-text ">Barrio</span>
-            <input type="text" class="form-control" placeholder="Barrio" aria-label="basic-addon">
-            <span class="input-group-text">Ciudad</span>
-            <input type="text" class="form-control" placeholder="Ciudad" aria-label="basic-addon">
-        </div>
-        <div class="input-group mb-3">
-            <span class="input-group-text">Describa la solicitud</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-secondary-ligth border-2" type="button">Enviar Solicitud</button>
-        </div>
-        </div>
-
         </div>
     </section>
     <div class="linea"></div>
@@ -541,7 +501,7 @@
                 <a href="#!" class="text-reset text-white">Ayuda</a>
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  text-white">
+            <div id="contact"class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  text-white">
                 <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
                 <a class="btn"
                             href="https://www.google.com.co/maps/place/Zona+Franca+Santander/@7.0612311,-73.1285163,17.5z/data=!4m6!3m5!1s0x8e683f18ef59f9a1:0xffbf118f3e8f20c!8m2!3d7.0613533!4d-73.125961!16s%2Fg%2F124syq8mc">
